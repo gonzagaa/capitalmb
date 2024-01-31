@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    --primary-color: #004BFE;
+    --secondary-color: #00009B;
+    --tertinary-color: #00004E;
+    --color-text: #d8d8d8;
+    --color-paragraphy: #969696;
+
+    --size-h2: 3rem;
+    --size-h2-desktop: 4rem;
+}  
+
+#regulamentos {
+    background-color: #030303;
+}
+
+#regulamentos .content .regulamentos-box {
+    text-align: left;
+}
+
+#regulamentos .content .regulamentos-box a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+#regulamentos .content .regulamentos-box a button {
+    background: linear-gradient(to right, #0000ca 0%, #004BFE 50%, #0000d6 100%);
+    color: var(--color-text);
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#regulamentos .content .regulamentos-box a button:hover {
+    background: linear-gradient(to right, #0000a5 0%, #002988 50%, #0000b1 100%);
+    cursor: pointer;
+}
+
+#regulamentos .content header h2 {
+    font-size: var(--size-h2);
+    color: var(--color-text);
+    text-align: left;
+}
+
+#regulamentos .content header h2 span {
+    background: #00009B;
+    background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#regulamentos .content header p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-text);
+    text-align: left;
+}
+
+#regulamentos .content .regulamentos-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+#regulamentos .content .regulamento {
+    text-align: left;
+}
+
+#regulamentos .content .regulamento h3 {
+    color: var(--color-text);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+#regulamentos .content .regulamento ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+}
+
+#regulamentos .content .regulamento ul li {
+    color: var(--color-paragraphy);
+    list-style: decimal;
+}
+
+#regulamentos .content .regulamento .table {
+    margin-top: 2rem;
+    display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+#regulamentos .content .regulamento table {
+    border-collapse: collapse;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#regulamentos .content .regulamento table td {
+    font-weight: 300;
+}
+
+#regulamentos .content .regulamento table td,
+#regulamentos .content .regulamento table th {
+    padding: 1rem;
+    border: 1px solid #d8d8d8;
+    color: #d8d8d8;
+    background-color: #111111;
+}
+
+@media (min-width: 1300px) {
+    section#regulamentos .content header h2 {
+        font-size: var(--size-h2-desktop);
+    }
+
+    section#regulamentos .content .regulamento h3 {
+        font-size: 2.5rem;
+    }
+
+    section#regulamentos .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    section#regulamentos .wrapper {
+        padding-inline: 20rem;
+    }
+}

@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-height: 7.2rem;
+
+    --primary-color: #004BFE;
+    --secondary-color: #00009B;
+    --tertinary-color: #00004E;
+    --color-text: #d8d8d8;
+    --color-paragraphy: #969696;
+
+    --size-h2: 3rem;
+    --size-h2-desktop: 4rem;
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  section {
+    padding-block: 10rem;
+  }
+
+/*HEADER HOME =================== */
+#home {
+  background: url(./assets/BG\ DESKTOP.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#home .content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content .text {
+  margin-top: 9.2rem;
+}
+
+#home .content .text p {
+  font-size: 1.4rem;
+  color: var(--color-paragraphy);
+  font-weight: 600;
+}
+
+#home .content .text p span {
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+#home .content .text h1 {
+  font-size: 3rem;
+  color: var(--color-text);
+
+  margin-bottom: 2rem;
+}
+
+#home .content .text h1 span {
+  background: #00009B;
+  background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home .content .text .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#home .content .text a button {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  color: var(--color-text);
+  font-weight: 700;
+  transition: all 200ms ease-in-out;
+  box-shadow: 4px 8px 20px #000;
+  background-color: var(--secondary-color);
+  outline: 2px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+#home .content .text a button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 4px 8px 20px #000850;
+}
+
+#home .content .image {
+  margin-top: 5rem;
+}
+
+#home .content .image img {
+  width: 100%;
+}
+/*TOPICOS =================== */
+#topics {
+  background-color: #030303;
+}
+
+#topics header h2 {
+  font-size: var(--size-h2);
+  color: var(--color-text);
+  margin-bottom: 5rem;
+}
+
+#topics .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#topics .content .card {
+  border-radius: 1rem;
+  background-color: #0a0a0a;
+  text-align: left;
+  padding: 2em 3rem;
+
+  box-shadow: 2px 2px 15px #3a3a3a6c;
+  border: .5px solid #1f1f1f;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#topics .content .card strong {
+  font-size: 6rem;
+  color: var(--primary-color);
+}
+
+#topics .content .card h3 {
+  color: var(--color-text);
+}
+
+#topics .content .card p {
+  color: var(--color-paragraphy);
+  font-weight: 500;
+}
+
+#topics video {
+  display: none;
+}
+/*PLANOS B3 =================== */
+#planosb3 {
+  background-color: #080808;
+}
+
+#planosb3 header {
+  margin-bottom: 5rem;
+}
+
+#planosb3 header h2 {
+  font-size: var(--size-h2);
+  color: var(--color-text);
+}
+
+#planosb3 header h2 span {
+  background: #00009B;
+  font-weight: 800;
+  background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#planosb3 .content .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#planosb3 .content .card {
+  background-color: #000;
+  border: 2px solid #181818;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem;
+
+  box-shadow: 10px 10px 30px #000;
+}
+
+#planosb3 .content .card h3 {
+  color: var(--color-text);
+}
+
+#planosb3 .content .card h3 span {
+  background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
+  padding: .4rem;
+}
+
+#planosb3 .content .card p {
+  color: var(--color-paragraphy);
+  font-weight: 500;
+}
+
+#planosb3 .content .card p span {
+  font-weight: 800;
+  background: linear-gradient(to right, #0000ca 0%, #004BFE 50%, #0000d6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#planosb3 .content .card a {
+  width: 100%;
+}
+
+#planosb3 .content .card a button {
+  /* From https://css.glass */
+  background: rgba(156, 156, 156, 0.13);
+  border-radius: 16px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 1rem 2rem;
+
+  transition: all 200ms ease-in-out;
+}
+
+#planosb3 .content .card a button:hover {
+  cursor: pointer;
+  background-color: #3131311e;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.466);
+}
+
+/* beneficios =================== */
+#beneficios {
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(1%2c 1%2c 25%2c 1)'%3e%3c/rect%3e%3cpath d='M0 7.18C4.15 -8.4 18.42 0.97 37.33 0C88.42 -2.62 88.66 0 140 0C178.5 0 179.2 -4.93 217 0C249.2 4.2 251.39 2.82 280 18.26C352.89 57.6 353.57 60.06 420 109.57C435.24 120.93 433.99 123.31 443.33 140C481.71 208.53 493.48 205.99 515.45 280C535.04 345.99 511.22 353.13 526.46 420C533.5 450.89 536.74 475.52 560 475.52C597.02 475.52 643.67 458.84 647.03 420C652.12 361.08 576.23 349.73 576.9 280C577.58 209.73 654.34 204.52 649.74 140C645.89 85.91 607.13 88.97 560 42.78C535.71 18.97 506.9 12.03 506.9 0C506.9 -9.36 533.45 0 560 0C630 0 630 0 700 0C770 0 770 0 840 0C910 0 910 0 980 0C1050 0 1050 0 1120 0C1190 0 1190 0 1260 0C1260 0 1260 0 1260 0C1330 8.86 1336.79 -8.62 1400 17.72C1476.79 49.72 1478.38 62.85 1540 116.67C1548.38 123.99 1540 128.34 1540 140C1540 210 1540 210 1540 280C1540 350 1540 350 1540 420C1540 490 1575 525 1540 560C1505 595 1470 560 1400 560C1350.74 560 1347.77 569.5 1301.48 560C1277.77 555.14 1279.94 531.28 1260 531.28C1242.73 531.28 1247.35 555.84 1227.06 560C1177.35 570.2 1173.53 560 1120 560C1057.24 560 1053.97 567.14 994.48 560C983.97 558.74 989.88 547.94 980 543.2C912.64 510.88 911.13 489.52 840 485.88C771.13 482.36 762.55 498.86 700 528.89C685.37 535.92 700.64 556.67 685.64 560C630.64 572.22 622.82 560 560 560C517.02 560 514.43 569.35 474.04 560C444.43 553.14 445.29 527.58 420 527.58C400.97 527.58 407.11 554.97 385.39 560C337.11 571.18 332.69 560 280 560C210 560 210 560 140 560C70 560 35 595 0 560C-35 525 0 490 0 420C0 350 0 350 0 280C0 210 0 210 0 140C0 73.59 -14.51 61.6 0 7.18' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M140 81.05C132.51 81.05 126.34 111.27 126.34 140C126.34 155.1 132.62 168.72 140 168.72C147.68 168.72 156.47 155.39 156.47 140C156.47 111.55 147.58 81.05 140 81.05' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1120 223.33C1105.23 223.33 1091.33 253.49 1091.33 280C1091.33 298.12 1105.36 312.6 1120 312.6C1135.15 312.6 1150.91 298.32 1150.91 280C1150.91 253.68 1135.02 223.33 1120 223.33' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1400 245C1381.19 245 1361.2 260.37 1361.2 280C1361.2 305.16 1381.45 334.58 1400 334.58C1417.8 334.58 1433.89 305.47 1433.89 280C1433.89 260.68 1417.54 245 1400 245' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M140 358.91C107.46 362.85 92.68 389.35 92.68 420C92.68 451.01 107.76 480.24 140 482.22C201.42 485.99 211.86 459.66 280 431.51C287.17 428.55 290.63 426.58 290.63 420C290.63 409.47 291.09 401.8 280 397.3C215.77 371.25 201.12 351.5 140 358.91' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 52.05C24.26 52.05 50.02 90.4 83.66 140C120.02 193.6 109.55 258.46 140 258.46C171.69 258.46 167.73 194.42 207.94 140C237.73 99.68 242.1 68.99 280 68.99C322.68 68.99 357.53 93.52 369.09 140C383.78 199.03 316.86 229.57 332.5 280C342.31 311.64 388.39 276.04 420 304.14C467.14 346.04 490 366.23 490 420C490 459.53 455.66 456.05 420 490.74C383.7 526.05 388.44 539.04 346.07 560C318.44 573.67 313.03 560 280 560C210 560 210 560 140 560C70 560 35 595 0 560C-35 525 0 490 0 420C0 350 0 350 0 280C0 210 0 210 0 140C0 96.03 -17.57 52.05 0 52.05' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M700 103.33C643.8 63.81 603.56 30.71 603.56 0C603.56 -20.95 651.78 0 700 0C750.46 0 767.75 -24.88 800.93 0C837.75 27.62 819.83 105 840 105C860.36 105 844.5 28.13 882 0C914.5 -24.37 931 0 980 0C1031.58 0 1083.16 -25 1083.16 0C1083.16 40.34 1038.26 76.23 980 130.67C963.34 146.23 933.33 136.02 933.33 140C933.33 143.94 966.18 129.81 980 146.51C1024.09 199.81 1008.31 217.54 1049.16 280C1078.31 324.56 1083.83 360.55 1120 360.55C1157.43 360.55 1196.36 325.25 1196.36 280C1196.36 214.98 1104.17 194.64 1120 140C1135.99 84.81 1185.1 81.2 1260 60.34C1325.1 42.21 1337.57 40.71 1400 62.03C1454.23 80.54 1447.61 99.96 1493.33 140C1517.61 161.26 1530.58 156.38 1540 184.64C1553.91 226.38 1540 232.32 1540 280C1540 330.62 1555.66 381.23 1540 381.23C1521.03 381.23 1509.01 327.64 1470.74 280C1439.01 240.51 1436.6 206.96 1400 206.96C1360.75 206.96 1319.04 239.03 1319.04 280C1319.04 332.5 1352.91 344.72 1400 393.9C1419.94 414.72 1433.58 398.8 1453.1 420C1503.58 474.85 1500.19 481.87 1540 546C1543.64 551.87 1546.36 559.36 1540 560C1476.36 566.36 1470 560 1400 560C1383.15 560 1380.77 567.61 1366.3 560C1310.77 530.81 1311.1 486.41 1260 486.41C1215.74 486.41 1222.37 535.41 1175.59 560C1152.37 572.21 1147.8 560 1120 560C1087.41 560 1080.21 575.73 1054.83 560C1010.21 532.33 1023.54 509.1 980 473.2C938.63 439.1 910.93 461.9 885 420C851.14 365.3 874.11 349.72 860.42 280C851.61 235.17 852.36 190.91 840 190.91C827.3 190.91 837.5 243.58 810.3 280C767.5 337.32 748.35 378.38 700 378.38C661.82 378.38 637.24 329.19 637.24 280C637.24 230.81 657.57 217.53 700 181.62C740.28 147.53 802.67 159.73 802.67 140C802.67 120.58 743.35 133.81 700 103.33' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M140 295.27C77.36 326.32 43.38 357.42 43.38 420C43.38 483.31 80.07 531.98 140 547.04C198.38 561.71 215.9 521.22 280 479.45C313.37 457.7 334.94 453.99 334.94 420C334.94 365.61 326.81 332.65 280 302.7C229.34 270.28 195.67 267.67 140 295.27' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M535.44 560C535.44 552.95 546.6 535.86 560 535.86C576.83 535.86 595.9 553.4 595.9 560C595.9 565.47 577.95 560 560 560C547.72 560 535.44 565.02 535.44 560' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 96.92C11.88 96.92 40.98 113.61 40.98 140C40.98 202.35 10.47 274.4 0 274.4C-10.02 274.4 0 207.2 0 140C0 118.46 -8.61 96.92 0 96.92' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M259.41 140C259.41 127.82 269.17 119.71 280 119.71C292.19 119.71 305.45 127.19 305.45 140C305.45 161.48 291.73 188.28 280 188.28C268.71 188.28 259.41 162.11 259.41 140' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M700 20C690.55 20 681.33 5.94 681.33 0C681.33 -4.06 690.66 0 700 0C709.76 0 719.53 -4.11 719.53 0C719.53 5.89 709.65 20 700 20' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M980 14C974.66 14 969.5 4.38 969.5 0C969.5 -2.63 974.75 0 980 0C985.53 0 991.05 -2.68 991.05 0C991.05 4.32 985.44 14 980 14' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1226.06 140C1228.03 122.71 1241.11 124.35 1260 120.69C1328.08 107.51 1334.35 99.3 1400 106.33C1424.5 108.95 1440.3 123.91 1440.3 140C1440.3 155.2 1418.81 152.79 1400 168.91C1337.1 222.79 1296.79 213.64 1276.87 280C1259.1 339.19 1330.4 364.7 1324.62 420C1321.96 445.47 1287.49 422.34 1260 441.54C1187.24 492.34 1192.56 502.09 1124.12 560C1122.56 561.32 1122.06 560 1120 560C1117.59 560 1116.23 562.12 1115.17 560C1081.23 492.12 1048.35 471.91 1050 420C1050.76 396.15 1092.56 428.51 1120 408.49C1188.47 358.51 1212.29 354.76 1241.82 280C1265.32 220.51 1218.94 202.37 1226.06 140' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M697.59 280C697.59 278.11 698.53 276.22 700 276.22C701.86 276.22 704.24 278.11 704.24 280C704.24 281.89 701.86 283.78 700 283.78C698.53 283.78 697.59 281.89 697.59 280' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M933.33 280C933.33 250.42 959.97 227.91 980 227.91C996.8 227.91 1006.99 252.47 1006.99 280C1006.99 329.43 997.85 381.82 980 381.82C961.02 381.82 933.33 327.37 933.33 280' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1507.58 280C1507.58 257.45 1531.04 235.36 1540 235.36C1547.25 235.36 1540 257.68 1540 280C1540 303.69 1547.33 327.38 1540 327.38C1531.12 327.38 1507.58 303.46 1507.58 280' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M379.24 420C379.24 394.74 400.87 364.48 420 364.48C438.02 364.48 453.54 394.23 453.54 420C453.54 438.94 437.59 453.89 420 453.89C400.44 453.89 379.24 439.44 379.24 420' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 525C1.68 525 6.67 545.26 6.67 560C6.67 562.76 0.53 562.8 0 560C-2.8 545.3 -1.65 525 0 525' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3cpath d='M215.68 560C215.68 551.38 251.27 527.4 280 527.4C296.8 527.4 306.74 550.03 306.74 560C306.74 566.33 293.37 560 280 560C247.84 560 215.68 567.68 215.68 560' stroke='rgba(0%2c 0%2c 0%2c 0.57)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+
+#beneficios header h2 {
+  font-size: var(--size-h2);
+  margin-bottom: 5rem;
+  color: var(--color-text);
+}
+
+#beneficios .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#beneficios .content .card {
+  background-color: #030303;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 15px #000;
+}
+
+#beneficios .content .card ion-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+#beneficios .content .card h3 {
+  color: var(--color-text);
+}
+
+#beneficios .content .card p {
+  font-weight: 500;
+  color: var(--color-paragraphy);
+}
+
+/* buttonWhatsapp =================== */
+#buttonWhatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: all 300ms ease-in-out;
+}
+
+#buttonWhatsapp.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#buttonWhatsapp {
+  color: #fff;
+}
+
+#buttonWhatsapp ion-icon {
+  font-size: 3rem;
+  transition: all 300ms ease-in-out;
+  background-color: var(--tertinary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
+
+#buttonWhatsapp ion-icon:hover {
+  transform: scale(1.05);
+}
+
+/*RESPONSIVIDADE =================== */
+@media (min-width: 1300px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+
+  #buttonWhatsapp ion-icon {
+    font-size: 4rem;
+  }
+
+  header#home {
+    background: transparent;
+    height: 60vh;
+  }
+
+  header#home .content {
+    height: 60vh;
+  }
+
+  header#home .wrapper .content .image {
+    display: flex;
+    justify-content: end;
+  }
+
+  header#home .wrapper .content img {
+    width: 60%;
+    filter: drop-shadow(5px 10px 30px #ffffff31);
+  }
+
+  header#home .wrapper {
+    width: min(170rem, 100%);
+  }
+
+  header#home .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+  }
+
+  header#home .wrapper .content .text {
+    text-align: start;
+    margin-top: initial;
+    margin-left: 2rem;
+  }
+
+  header#home .wrapper .content .text p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  header#home .wrapper .content .text h1 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  } 
+
+  header#home .wrapper .content .text .buttons {
+    justify-content: initial;
+  }
+
+  header#home .wrapper .content .text a button {
+    font-size: 2rem;
+  }
+
+  section#topics header h2 {
+    font-size: var(--size-h2-desktop);
+  }
+
+  section#topics .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section#topics .content .card {
+    background-color: #00000057;
+  }
+
+  section#topics {
+    background-color: #030303;
+  }
+
+  section#topics video {
+    display: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+    filter: brightness(.3);
+  }
+
+  section#planosb3 .content {
+    padding-inline: 15rem;
+  }
+
+  section#planosb3 .content .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section#planosb3 .content header h2 {
+    font-size: var(--size-h2-desktop);
+  }
+
+  section#planosb3 .content .cards .card h3 {
+    font-size: 3rem;
+  }
+
+  section#planosb3 .content .cards .card p {
+    font-size: 2rem;
+  }
+
+  section#planosb3 .content .cards .card a button {
+    font-size: 1.8rem;
+  }
+
+  section#beneficios header h2 {
+    font-size: var(--size-h2-desktop);
+  }
+
+  section#beneficios .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section#beneficios .wrapper .content .card {
+    min-height: 20rem;
+  }
+
+  section#beneficios .wrapper .content .card h3 {
+    font-size: 2rem;
+  }
+
+  section#beneficios .wrapper .content .card p {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+ 
