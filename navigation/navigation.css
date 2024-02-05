@@ -10,7 +10,14 @@
   :root {
     font-size: 62.5%;
 
-   
+    --primary-color: #004BFE;
+    --secondary-color: #00009B;
+    --tertinary-color: #00004E;
+    --color-text: #d8d8d8;
+    --color-paragraphy: #969696;
+  
+    --size-h2: 3rem;
+    --size-h2-desktop: 4rem;
 
     --nav-height: 7.2rem;
 }  
@@ -34,11 +41,6 @@ body {
     font-size: 1.6rem;
     text-align: center;
     font-weight: 700;
-  
-    background-image: url(./assets/BG-IMAGE.jpg);
-    background-position-x: 33%;
-    background-repeat: no-repeat;
-  
     overflow: overlay;
   }
   
@@ -161,7 +163,7 @@ nav {
     top: 0;
     right: 0;
     
-    background-color: var(--bg-color-2);
+    background: linear-gradient(to bottom, #00009B 0%, #002781 50%, #000052 100%);
     
     width: 100vw;
     height: 100vh;
@@ -198,15 +200,15 @@ nav {
   }
   
   .menu ul li a:hover {
-    color: var(--secondary-color);
+    color: #fff;
   }
   
   .menu .button {
-    background: var(--primary-color);
+    background: var(--color-text);
     border-radius: 4rem;
     text-decoration: none;
   
-    color: var(--color-text);
+    color: var(--primary-color);
   
     display: inline-block;
     padding: 1.6rem 3.2rem;
@@ -226,7 +228,7 @@ nav {
   }
 
   .menu .button:hover {
-    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 10px #000;
   }
   
   .social-links {
