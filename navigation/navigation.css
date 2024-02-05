@@ -305,7 +305,8 @@ nav {
         background-color: var(--color-button);
 
         padding: 1rem 2rem;
-        border-radius: 1rem;
+        border-radius: 2rem;
+        border: 1px solid var(--color-paragraphy);
 
         transition: all 300ms ease-in-out;
         font-weight: 700;
@@ -382,7 +383,7 @@ nav {
       }
 
       nav#navigation .wrapper {
-        width: min(170rem, 100%);
+        width: min(150rem, 100%);
       }
 
       .wrapper {

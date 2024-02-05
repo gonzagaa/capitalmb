@@ -144,6 +144,13 @@ align-items: center;
 gap: 3rem;
 }
 
+#topics .content ion-icon {
+  font-size: 4rem;
+  animation: moveArrowMobile infinite ease-in-out 1.3s;
+  filter: drop-shadow(1px 1px 10px #fdfdfd60);
+  color: var(--primary-color);
+}
+
 #topics .content .card {
 border-radius: 1rem;
 background-color: #0a0a0a;
@@ -179,6 +186,22 @@ display: none;
 /* TABLES PROFIT =================== */
 #tableprofit {
 background-color: #030303;
+position: relative;
+
+display: flex;
+justify-content: center;
+}
+
+#tableprofit img.arrow {
+  position: absolute;
+  top: 0;
+}
+
+#tableprofit img.circle {
+  position: absolute;
+  bottom: -5rem;
+  left: -3rem;
+  transform: rotate(90deg);
 }
 
 #tableprofit header h2 {
@@ -201,7 +224,6 @@ background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
 
 #tableprofit .table-box {
   margin-top: 10rem;
-
 }
 
 #tableprofit .table-box .table {
@@ -312,6 +334,92 @@ font-weight: 500;
 color: var(--color-paragraphy);
 }
 
+/*footer =================== */
+#footer {
+    background: #000;
+}
+
+#footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#footer .content a {
+  text-decoration: none;
+}
+
+#footer .content a button {
+  margin-block: 3rem;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #1f1f1f;
+  color: var(--color-text);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #000;
+  font-weight: 700;
+
+  transition: all 200ms ease-in-out;
+}
+
+#footer .content a button:hover {
+  cursor: pointer;
+  outline: 1px solid var(--color-paragraphy);
+}
+
+#footer .content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+}
+
+#footer .content ul li a {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: underline;
+
+  transition: all 50ms ease-in-out;
+}
+
+#footer .content ul li a:hover {
+  font-weight: 700;
+}
+
+#footer .content span {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+#footer .content strong {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+#footer .foot {
+  background-color: #0a0a0a;
+  width: 100%;
+  padding: 1rem;
+}
+
+#footer .foot strong {
+  color: var(--color-paragraphy);
+}
+
+#footer .foot strong a {
+  text-decoration: underline;
+  color: var(--color-paragraphy);
+
+  transition: all 50ms ease-in-out;
+}
+
+#footer .foot strong a:hover {
+  color: var(--color-text);
+}
+
 /* buttonWhatsapp =================== */
 #buttonWhatsapp {
 position: fixed;
@@ -376,11 +484,10 @@ header#home .wrapper .content .image {
 
 header#home .wrapper .content img {
   width: 60%;
-  filter: drop-shadow(5px 10px 30px #ffffff31);
 }
 
 header#home .wrapper {
-  width: min(170rem, 100%);
+  width: min(150rem, 100%);
 }
 
 header#home .wrapper .content {
@@ -418,16 +525,21 @@ section#topics header h2 {
 }
 
 section#topics .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+}
+
+section#topics .content ion-icon {
+  transform: rotate(-90deg);
+  animation: none;
 }
 
 section#topics .content .card {
   background-color: #00000057;
+  width: 33%;
 }
 
 section#topics {
-  background-color: #030303;
+  background: linear-gradient(to bottom, #050505, #020202);
 }
 
 section#topics video {
@@ -441,6 +553,13 @@ section#topics video {
   height: 100vh;
 
   filter: brightness(.3);
+}
+
+section#tableprofit .wrapper .tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 5rem;
 }
 
 section#tableprofit header h2 {
@@ -477,8 +596,27 @@ section#beneficios .wrapper .content .card p {
   font-size: 1.8rem;
 }
 
+footer#footer .content .content-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20rem;
+  margin-bottom: 3rem;
 }
 
+footer#footer .content .content-box .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+@keyframes moveArrowMobile {
+  50% {
+    transform: translateY(5px);
+  }
+}
 
 
 
