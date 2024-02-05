@@ -21,7 +21,11 @@
 }  
 
 #regulamentos {
-    background-color: #030303;
+    background: hsla(0, 0%, 5%, 1);
+    background: linear-gradient(0deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 0%, 1) 95%);    
+    background: -moz-linear-gradient(0deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 0%, 1) 95%);    
+    background: -webkit-linear-gradient(0deg, hsla(0, 0%, 5%, 1) 0%, hsla(0, 0%, 0%, 1) 95%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0E0E", endColorstr="#000000", GradientType=1 );
 }
 
 #regulamentos .content .regulamentos-box {

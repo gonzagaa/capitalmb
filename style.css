@@ -106,7 +106,7 @@ border: none;
 color: var(--color-text);
 font-weight: 700;
 transition: all 200ms ease-in-out;
-box-shadow: 4px 8px 20px #000;
+box-shadow: 3px 3px 20px #000;
 background-color: var(--secondary-color);
 outline: 2px solid var(--secondary-color);
 cursor: pointer;
@@ -115,7 +115,7 @@ cursor: pointer;
 #home .content .text a button:hover {
 background-color: transparent;
 cursor: pointer;
-box-shadow: 4px 8px 20px #000850;
+box-shadow: 4px 4px 20px #000000 inset;
 }
 
 #home .content .image {
