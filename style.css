@@ -556,9 +556,8 @@ section#topics video {
 }
 
 section#tableprofit .wrapper .tables {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   gap: 5rem;
 }
 
