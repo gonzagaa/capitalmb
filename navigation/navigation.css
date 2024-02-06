@@ -163,7 +163,8 @@ nav {
     top: 0;
     right: 0;
     
-    background: linear-gradient(to bottom, #00009B 0%, #002781 50%, #000052 100%);
+    background: rgb(23,23,23);
+  background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(10,10,10,1) 20%, rgba(0,0,0,1) 100%);
     
     width: 100vw;
     height: 100vh;
