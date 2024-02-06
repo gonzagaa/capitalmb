@@ -54,13 +54,13 @@
     cursor: pointer;
 }
 
-#regulamentos .content header h2 {
-    font-size: var(--size-h2);
+#regulamentos .content header h1 {
+    font-size: 3rem;
     color: var(--color-text);
     text-align: left;
 }
 
-#regulamentos .content header h2 span {
+#regulamentos .content header h1 span {
     background: #00009B;
     background: linear-gradient(to right, #00009B 0%, #004BFE 50%, #00009B 100%);
     -webkit-background-clip: text;
@@ -131,8 +131,8 @@
 }
 
 @media (min-width: 1300px) {
-    section#regulamentos .content header h2 {
-        font-size: var(--size-h2-desktop);
+    section#regulamentos .content header h1 {
+        font-size: 4rem;
     }
 
     section#regulamentos .content .regulamento h3 {
