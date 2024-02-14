@@ -7,7 +7,7 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: 60%;
   --nav-height: 7.2rem;
 
   --primary-color: #004BFE;
@@ -247,6 +247,14 @@ background-color: #0a0a0a;
 
 box-shadow: 2px 2px 15px #3a3a3a6c;
 border: .5px solid #1f1f1f;
+}
+
+#tableprofit .table-box table::-webkit-scrollbar {
+  color: var(--tertinary-color);
+}
+
+#tableprofit .table-box table::-webkit-scrollbar-thumb {
+  color: #1f1f1f;
 }
 
 #tableprofit .table-box table td, th {
@@ -550,9 +558,28 @@ transform: scale(1.05);
 }
 
 /*RESPONSIVIDADE =================== */
-@media (min-width: 1300px) {
+@media (min-width: 768px) {
+  .wrapper {
+    width: min(80rem, 100%);
+  }
+
+  header#home .wrapper .content .text h1 {
+    font-size: 3rem;
+  }
+
+  section#beneficios .wrapper .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
 .wrapper {
-  width: min(150rem, 100%);
+  width: min(140rem, 100%);
+}
+
+:root {
+  font-size: 62.5%;
 }
 
 #buttonWhatsapp ion-icon {
@@ -561,11 +588,11 @@ transform: scale(1.05);
 
 header#home {
   background: transparent;
-  height: 60vh;
+  height: 75vh;
 }
 
 header#home .content {
-  height: 60vh;
+  height: 75vh;
 }
 
 header#home .wrapper .content .image {
@@ -574,7 +601,7 @@ header#home .wrapper .content .image {
 }
 
 header#home .wrapper .content img {
-  width: 60%;
+  width: 50%;
 }
 
 header#home .wrapper {
@@ -599,7 +626,7 @@ header#home .wrapper .content .text p {
 }
 
 header#home .wrapper .content .text h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-bottom: 4rem;
 } 
 
@@ -608,7 +635,7 @@ header#home .wrapper .content .text .buttons {
 }
 
 header#home .wrapper .content .text a button {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 section#topics header h2 {

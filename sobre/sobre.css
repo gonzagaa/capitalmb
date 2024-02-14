@@ -84,7 +84,7 @@ body {
     border: 1px solid #7aa2ff;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1080px) {
     section#sobre h1 {
         font-size: 5rem;
     }

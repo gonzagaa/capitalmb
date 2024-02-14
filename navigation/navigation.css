@@ -251,7 +251,13 @@ nav {
 
   /* RESPONSIVE =================== */
 
-@media (min-width: 1300px) {
+  @media (min-width: 768px) {
+    .wrapper {
+      width: min(80rem, 100%);
+    }
+  }
+
+@media (min-width: 1080px) {
     /* reset =================== */
       nav#navigation .wrapper * {
         margin: 0;
@@ -384,11 +390,11 @@ nav {
       }
 
       nav#navigation .wrapper {
-        width: min(150rem, 100%);
+        width: min(140rem, 100%);
       }
 
       .wrapper {
-        width: min(150rem, 100%);
+        width: min(140rem, 100%);
       }
     } 
 
