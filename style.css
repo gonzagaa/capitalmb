@@ -604,10 +604,6 @@ header#home .wrapper .content img {
   width: 50%;
 }
 
-header#home .wrapper {
-  width: min(150rem, 100%);
-}
-
 header#home .wrapper .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
