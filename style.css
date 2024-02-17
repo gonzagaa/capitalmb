@@ -55,12 +55,12 @@ section {
 }
 
 #home .blush {
-  width: 1000px;
-  height: 1000px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   background: radial-gradient(#00009B, transparent 50%);
-  top: -50rem;
-  left: -31rem;
+  top: -25rem;
+  left: -17rem;
   opacity: .6;
 
   animation: blush 4s linear infinite;
