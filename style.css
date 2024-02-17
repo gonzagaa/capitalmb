@@ -666,7 +666,7 @@ section#topics video {
   width: 100%;
   height: 100vh;
 
-  filter: brightness(.3);
+  filter: brightness(.4);
 }
 
 section#tableprofit .wrapper .tables {
