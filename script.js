@@ -37,3 +37,26 @@ ScrollReveal().reveal('h2, #topics .card, #topics ion-icon, #tableprofit button,
 ScrollReveal().reveal('.buttons, #home .text p, .details details.left, #sobre .button, #regulamentos .button, #regulamentos ul, #regulamentos p', { distance: '100px', origin: 'bottom', opacity: 0, duration: 600, easing: 'ease-in-out'});
 
 ScrollReveal().reveal('#home .image, #tableprofit .table, .details details.right', { distance: '100px', origin: 'bottom', opacity: 0, duration: 600, easing: 'ease-in-out'});
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    spaceBetween: 30,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+          },
+        1024: {
+            slidesPerView: 3,
+        }
+    },
+    keyboard: {
+        enabled: true,
+      },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+  });
