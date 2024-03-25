@@ -425,7 +425,7 @@ font-weight: 500;
   padding: 2rem;
 
   box-shadow: 2px 2px 15px #3a3a3a6c;
-  border: 2px solid #1f1f1f;
+  border: 1px solid #1f1f1f;
   width: 100%;
 
   position: relative;
@@ -541,7 +541,7 @@ font-weight: 500;
 
 #planos.pro .wrapper .cards .card {
   background: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%);
-  border: 2px solid var(--tertinary-color);
+  border: 1px solid var(--tertinary-color);
 }
 
 #planos.pro .wrapper .cards .card .title h3 {
