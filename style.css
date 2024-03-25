@@ -83,7 +83,7 @@ section {
 }
 
 #home .content .text {
-margin-top: 8.2rem;
+margin-top: var(--nav-height);
 z-index: 10;
 }
 
@@ -235,9 +235,15 @@ gap: 3rem;
 
 #topics .content ion-icon {
   font-size: 4rem;
-  animation: moveArrowMobile infinite ease-in-out 1.3s;
+  animation: moveArrowMobile infinite ease-in-out 2s;
   filter: drop-shadow(1px 1px 10px #fdfdfd60);
   color: var(--primary-color);
+}
+
+@keyframes moveArrowMobile {
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 #topics .content .card {
@@ -1012,13 +1018,6 @@ footer#footer .content .content-box .right {
 }
 
 }
-
-@keyframes moveArrowMobile {
-  50% {
-    transform: translateY(3px);
-  }
-}
-
 
 
 
